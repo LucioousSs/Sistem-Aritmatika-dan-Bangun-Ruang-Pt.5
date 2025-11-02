@@ -128,18 +128,21 @@ public class Looping {
                         // }
                         break;
                     case 4:
-                         System.out.print("Masukan jari-jari lingkaran: ");
-                            int radius = scanner.nextInt();
-                            for (int y = -radius; y <= radius; y++) {
-                                for (int x = -radius; x <= radius; x++) {
-                                    if (x * x + y * y <= radius * radius) {
-                                        System.out.print("* ");
-                                    } else {
-                                        System.out.print("  ");
-                                    }
-                                }
-                                System.out.println();
-                            }
+                        kelasLogikabentuk KlL = new kelasLogikabentuk();
+                        System.out.print ("Masukkan N: ");
+                        int c = scanner.nextByte();
+                        KlL.bentukLingkaran(c);
+                        
+                            // for (int y = -radius; y <= radius; y++) {
+                            //     for (int x = -radius; x <= radius; x++) {
+                            //         if (x * x + y * y <= radius * radius) {
+                            //             System.out.print("* ");
+                            //         } else {
+                            //             System.out.print("  ");
+                            //         }
+                            //     }
+                            //     System.out.println();
+                            // }
                         }
             } while (prosesLogikaBentuk != 5);
         } else if (pilihan == 3) {

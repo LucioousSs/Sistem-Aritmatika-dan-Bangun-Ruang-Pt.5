@@ -28,4 +28,17 @@ public class kelasLogikabentuk {
             System.out.println ("*");
         }
     }
+
+    void bentukLingkaran (int c) {
+        for (int i = -c; i<=c; i++){
+            for (int j = -c; j<=c; j++){
+                if (j*j + i*i <= c*c){
+                    System.out.print ("* ");
+                } else {
+                    System.out.print ("  ");
+                }
+            }
+            System.out.println ();
+        }
+    }
 }
